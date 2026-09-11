@@ -116,6 +116,5 @@ After completing these practicals, the learner will be able to:
 
 ## Author
 
-**Your Name**
-
+Aditi Panwar
 B.Tech CSE (AI)

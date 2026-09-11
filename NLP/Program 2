@@ -3,17 +3,24 @@
 import nltk
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 from nltk.tokenize import word_tokenize
+
 nltk.download('punkt')
 nltk.download('wordnet')
+
 text = "The children are playing games and the players are running quickly."
+
 words = word_tokenize(text)
+
 stemmer = PorterStemmer()
 lemmatizer = WordNetLemmatizer()
+
 print("Original Words:")
 print(words)
+
 print("\nStemming:")
 for word in words:
     print(word, "->", stemmer.stem(word))
+
 print("\nLemmatization:")
 for word in words:
     print(word, "->", lemmatizer.lemmatize(word))

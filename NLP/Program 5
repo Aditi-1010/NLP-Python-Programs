@@ -1,0 +1,22 @@
+#Parsing and Chunking using RegEx and spaCy
+
+import spacy
+
+nlp = spacy.load("en_core_web_sm")
+
+text = "The quick brown fox jumps over the lazy dog."
+
+doc = nlp(text)
+
+print("RegEx Chunking (Noun Phrases):")
+import re
+
+pattern = r'\b(?:the|a|an)\s+\w+(?:\s+\w+)*'
+chunks = re.findall(pattern, text, re.IGNORECASE)
+
+for chunk in chunks:
+    print(chunk)
+
+print("\nspaCy Chunking (Noun Phrases):")
+for chunk in doc.noun_chunks:
+    print(chunk.text)

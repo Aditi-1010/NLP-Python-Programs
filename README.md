@@ -1,140 +1,45 @@
-# NLP Practicals 📚
+NLP Practicals 📚
+A collection of 32 Natural Language Processing (NLP) practicals implemented using Python and popular NLP / machine-learning libraries. The practicals progress from text preprocessing and numerical representation to embeddings, classification, sentiment analysis, topic modeling, information extraction, transformer models, and document-processing applications.
+Note: The filenames below are a suggested, consistent naming convention for the 32 practicals. Adjust any filename to match the actual file in your repository.
 
-This repository contains a collection of **Natural Language Processing (NLP)** practical programs implemented using **Python, NLTK, spaCy, Regular Expressions (RegEx), GloVe, Gensim, TextBlob, VADER, and Scikit-learn**.
+🎯 Objectives
+- Learn core NLP concepts, from preprocessing to transformer-based applications.
+- Represent text numerically using Bag of Words, TF-IDF, n-grams, and embeddings.
+- Compare documents and measure semantic similarity.
+- Build text-classification, sentiment-analysis, topic-modeling, and information-retrieval workflows.
+- Explore RNN/LSTM, attention, BERT, GPT-2, and other transformer-based models.
+- Apply NLP to translation, summarization, chatbots, and document organization.
+🛠️ Technologies Used
+Technology / Library	Purpose in the practicals
+Python 3.x	Main programming language
+NLTK	Tokenization, stemming, lemmatization, stop-word removal, POS tagging, n-grams
+spaCy	Linguistic processing, parsing, named entity recognition, information extraction
+Regular Expressions (re)	Pattern matching and rule-based chunking / boundary detection
+Scikit-learn	BoW, TF-IDF, cosine similarity, classification, LSA/SVD, evaluation
+Gensim	Word2Vec, topic modeling, and Word Mover's Distance support
+GloVe vectors	Pre-trained word embeddings
+TextBlob and VADER	Sentiment analysis
+PyTorch / TensorFlow	Neural sequence models, where used
+Hugging Face Transformers	BERT, GPT-2, MarianMT, BART, T5, and other transformer workflows
 
-The practicals cover important NLP concepts ranging from basic text preprocessing and representation to **word embeddings, text similarity, text classification, sentiment analysis, topic modeling, opinion mining, information extraction, and information retrieval**.
 
----
-
-# 🎯 Objectives
-
-The main objectives of these practicals are:
-
-* To understand the fundamentals of Natural Language Processing.
-* To perform sentence and word tokenization.
-* To understand stemming and lemmatization.
-* To remove unnecessary stop words from text.
-* To perform Part-of-Speech (POS) tagging.
-* To understand parsing and chunking.
-* To identify important entities using Named Entity Recognition.
-* To understand Bag of Words representation.
-* To convert text into numerical vectors.
-* To understand Term Frequency and Inverse Document Frequency.
-* To apply TF-IDF to text documents.
-* To generate unigrams, bigrams, and trigrams.
-* To understand word embeddings using GloVe.
-* To calculate text similarity using Word Mover's Distance.
-* To perform text classification using Naïve Bayes and SVM.
-* To perform sentiment analysis using TextBlob and VADER.
-* To perform topic modeling using LDA and LSA.
-* To perform opinion mining on product/service reviews.
-* To extract information from structured and unstructured text.
-* To build a basic information retrieval system using TF-IDF and cosine similarity.
-
----
-
-# 🛠️ Technologies Used
-
-### Python 3.x
-
-Programming language used to implement all practicals.
-
-### NLTK
-
-Used for:
-
-* Tokenization
-* Stemming
-* Lemmatization
-* Stop-word removal
-* POS tagging
-* Chunking
-* N-Grams
-* Text preprocessing
-
-### spaCy
-
-Used for:
-
-* Tokenization
-* POS tagging
-* Chunking
-* Named Entity Recognition
-* Information Extraction
-
-### Regular Expressions (RegEx)
-
-Used for:
-
-* Pattern-based parsing
-* Chunking
-* Text pattern matching
-
-### Scikit-learn
-
-Used for:
-
-* Bag of Words
-* TF-IDF
-* Text classification
-* Naïve Bayes
-* SVM
-* Cosine similarity
-* LSA using SVD
-* Numerical representation of text
-
-### GloVe
-
-Used for:
-
-* Word embeddings
-* Semantic representation of words
-* Word similarity
-* Vector-based NLP operations
-
-### Gensim
-
-Used for:
-
-* Word embeddings
-* Word Mover's Distance
-* Topic modeling
-* LDA
-
-### TextBlob
-
-Used for:
-
-* Sentiment analysis
-* Polarity detection
-* Subjectivity detection
-
-### VADER
-
-Used for:
-
-* Sentiment analysis
-* Sentiment scoring
-* Positive, negative, and neutral classification
-
----
-
-# 📂 Repository Structure
-
-```text
+The exact dependencies depend on which practical you run. Some models also require downloads and may need a GPU for faster execution.
+📂 Repository Structure
+Use a numbered filename convention to keep all 32 practicals in order:
 NLP-Python-Programs/
-│
 ├── 01_Tokenization.py
 ├── 02_Stemming_Lemmatization.py
 ├── 03_Stopword_Removal.py
 ├── 04_POS_Tagging.py
 ├── 05_Parsing_Chunking.py
-├── 06_NER.py
-├── 07_Bag_of_Words.py
-├── 08_TF_IDF.py
-├── 09_N_Grams.py
-├── 10_GloVe_Word_Embeddings.py
-│
+├── 06_NER_spaCy.py
+├── 07_Coreference_Resolution.py
+├── 08_Bag_of_Words.py
+├── 09_TF_IDF_vs_BoW.py
+├── 10_N_Grams.py
+├── 11_Cosine_Similarity.py
+├── 12_Word2Vec_Embeddings.py
+├── 13_GloVe_Word_Embeddings.py
 ├── 14_WMD_Text_Similarity.py
 ├── 15_Text_Classification_TFIDF.py
 ├── 16_Sentiment_Analysis.py
@@ -143,752 +48,136 @@ NLP-Python-Programs/
 ├── 19_Opinion_Mining.py
 ├── 20_Information_Extraction.py
 ├── 21_Information_Retrieval_TFIDF.py
-│
+├── 22_RNN_LSTM_Sequence_Classification.py
+├── 23_Attention_Mechanism.py
+├── 24_BERT_Text_Classification.py
+├── 25_BERT_GPT2_Sentence_Embeddings.py
+├── 26_GPT2_Text_Generation.py
+├── 27_Transformer_NER.py
+├── 28_Machine_Translation_MarianMT_T5.py
+├── 29_Text_Summarization_BART_T5.py
+├── 30_Transformer_Chatbot.py
+├── 31_Document_Classification_Separation.py
+├── 32_Hybrid_Probabilistic_FSM_Boundary_Detection.py
 └── README.md
-```
-
----
-
-# 🔟 GloVe Word Embeddings
-
-File:
-
-`10_GloVe_Word_Embeddings.py`
-
-## 🔹 What is GloVe?
-
-**GloVe (Global Vectors for Word Representation)** is a word embedding technique that represents words as numerical vectors.
-
-It captures semantic relationships between words based on their co-occurrence statistics in a large text corpus.
-
-For example, semantically related words such as:
-
-```text
-king
-queen
-man
-woman
-```
-
-are represented using vectors that capture relationships between them.
-
-## 🔹 What does the program do?
-
-The practical:
-
-* Loads pre-trained GloVe word vectors.
-* Represents words using numerical vectors.
-* Finds similar words.
-* Calculates similarity between words.
-* Demonstrates semantic relationships using word embeddings.
-
-## 🔹 Important Concepts
-
-* Word Embeddings
-* Vector Representation
-* Semantic Similarity
-* Pre-trained Word Vectors
-* GloVe
-
-## 💡 Key Learning
-
-GloVe converts words into dense numerical vectors that capture semantic relationships between words.
-
----
-
-# 1️⃣4️⃣ Text Similarity using Word Mover's Distance (WMD)
-
-File:
-
-`14_WMD_Text_Similarity.py`
-
-## 🔹 What is Word Mover's Distance?
-
-**Word Mover's Distance (WMD)** measures the semantic distance between two documents or sentences using word embeddings.
-
-Instead of simply comparing whether the same words occur, WMD considers the distance between the meanings of words in the embedding space.
-
-### Important Point
-
-```text
-Lower WMD → More Similar
-Higher WMD → Less Similar
-```
-
-## 🔹 What does the program do?
-
-The practical:
-
-* Takes two text sentences.
-* Tokenizes the sentences.
-* Represents words using word embeddings.
-* Calculates Word Mover's Distance.
-* Determines the similarity between the texts.
-
-## 🔹 Important Concepts
-
-* Word Embeddings
-* Semantic Similarity
-* Word Mover's Distance
-* Vector Space
-* Document Similarity
-
-## 💡 Key Learning
-
-WMD can measure semantic similarity even when two texts do not contain exactly the same words.
-
----
-
-# 1️⃣5️⃣ Text Classification using Naïve Bayes / SVM with TF-IDF
-
-File:
-
-`15_Text_Classification_TFIDF.py`
-
-## 🔹 What is Text Classification?
-
-Text classification is the process of assigning predefined categories or labels to text.
-
-Examples include:
-
-* Spam / Not Spam
-* Positive / Negative
-* Sports / Technology
-* News categories
-
-## 🔹 TF-IDF
-
-TF-IDF converts text into numerical vectors by assigning importance to words based on their frequency in documents.
-
-## 🔹 Naïve Bayes
-
-Naïve Bayes is a probabilistic machine learning algorithm commonly used for text classification.
-
-## 🔹 SVM
-
-Support Vector Machine (SVM) is a supervised learning algorithm that finds a decision boundary between different classes.
-
-## 🔹 What does the program do?
-
-The practical:
-
-* Takes text documents and labels.
-* Converts text into TF-IDF vectors.
-* Splits the dataset into training and testing data.
-* Trains a Naïve Bayes or SVM classifier.
-* Predicts the class of test documents.
-* Calculates classification accuracy.
-
-## 🔹 Important Concepts
-
-* TF-IDF
-* Training Data
-* Testing Data
-* Naïve Bayes
-* SVM
-* Classification
-* Accuracy
-
-## 💡 Key Learning
-
-TF-IDF provides numerical features that can be used by machine learning algorithms for text classification.
-
----
-
-# 1️⃣6️⃣ Sentiment Analysis using TextBlob and VADER
-
-File:
-
-`16_Sentiment_Analysis.py`
-
-## 🔹 What is Sentiment Analysis?
-
-Sentiment analysis determines the emotional or opinion-based nature of text.
-
-A text can generally be classified as:
-
-```text
-Positive
-Negative
-Neutral
-```
-
-## 🔹 TextBlob
-
-TextBlob provides a simple way to calculate:
-
-* Polarity
-* Subjectivity
-
-Polarity indicates whether the text is positive or negative.
-
-Subjectivity indicates how opinion-based the text is.
-
-## 🔹 VADER
-
-**VADER (Valence Aware Dictionary and sEntiment Reasoner)** is a rule-based sentiment analysis tool designed particularly for text containing informal language.
-
-It produces sentiment scores including:
-
-* Positive
-* Negative
-* Neutral
-* Compound
-
-## 🔹 What does the program do?
-
-The practical:
-
-* Takes a text sentence as input.
-* Performs sentiment analysis using TextBlob.
-* Performs sentiment analysis using VADER.
-* Displays sentiment scores.
-* Classifies the text as positive, negative, or neutral.
-
-## 💡 Key Learning
-
-Sentiment analysis is widely used for analyzing opinions, reviews, feedback, and social media text.
-
----
-
-# 1️⃣7️⃣ Topic Modeling using Latent Dirichlet Allocation (LDA)
-
-File:
-
-`17_LDA_Topic_Modeling.py`
-
-## 🔹 What is LDA?
-
-**Latent Dirichlet Allocation (LDA)** is an unsupervised machine learning technique used for discovering hidden topics in a collection of documents.
-
-A document can contain multiple topics, and each topic is represented by a group of related words.
-
-## 🔹 What does the program do?
-
-The practical:
-
-* Takes a collection of documents.
-* Performs basic text preprocessing.
-* Creates a dictionary of words.
-* Creates a Bag of Words representation.
-* Applies the LDA algorithm.
-* Extracts hidden topics.
-* Displays important words associated with each topic.
-
-## 🔹 Important Concepts
-
-* Topic Modeling
-* Latent Topics
-* Bag of Words
-* Document-Topic Distribution
-* Topic-Word Distribution
-* LDA
-
-## 💡 Key Learning
-
-LDA automatically discovers hidden thematic structures within a collection of documents.
-
----
-
-# 1️⃣8️⃣ Topic Modeling using Latent Semantic Analysis (LSA)
-
-File:
-
-`18_LSA_Topic_Modeling.py`
-
-## 🔹 What is LSA?
-
-**Latent Semantic Analysis (LSA)** is a technique used to discover hidden semantic relationships between terms and documents.
-
-LSA commonly uses **Singular Value Decomposition (SVD)** to reduce the dimensionality of a document-term or TF-IDF matrix.
-
-## 🔹 What does the program do?
-
-The practical:
-
-* Takes multiple documents.
-* Converts documents into TF-IDF vectors.
-* Applies SVD.
-* Reduces the dimensionality of the text representation.
-* Extracts important words associated with latent topics.
-
-## 🔹 Important Concepts
-
-* TF-IDF
-* Singular Value Decomposition
-* Dimensionality Reduction
-* Latent Topics
-* Semantic Relationships
-* LSA
-
-## 💡 Key Learning
-
-LSA identifies hidden semantic structures by reducing the dimensionality of the text representation.
-
----
-
-# 1️⃣9️⃣ Opinion Mining on Product/Service Reviews Dataset
-
-File:
-
-`19_Opinion_Mining.py`
-
-## 🔹 What is Opinion Mining?
-
-Opinion mining is the process of identifying opinions, attitudes, and sentiments expressed in text.
-
-It is commonly applied to:
-
-* Product reviews
-* Customer feedback
-* Service reviews
-* Online comments
-
-## 🔹 What does the program do?
-
-The practical:
-
-* Takes product or service reviews.
-* Processes each review.
-* Calculates sentiment polarity.
-* Classifies reviews as positive, negative, or neutral.
-* Displays the sentiment results.
-* Provides a summary of sentiment distribution.
-
-## 🔹 Example
-
-```text
-"The product is excellent"
-        ↓
-Positive
-
-"The service was terrible"
-        ↓
-Negative
-```
-
-## 💡 Key Learning
-
-Opinion mining helps organizations understand customer feedback and evaluate opinions about products or services.
-
----
-
-# 2️⃣0️⃣ Information Extraction (IE) from Structured / Unstructured Documents
-
-File:
-
-`20_Information_Extraction.py`
-
-## 🔹 What is Information Extraction?
-
-**Information Extraction (IE)** is the process of automatically extracting useful and structured information from text.
-
-It can identify entities such as:
-
-* People
-* Organizations
-* Locations
-* Dates
-* Money
-* Products
-
-## 🔹 Named Entity Recognition
-
-NER is an important component of information extraction.
-
-For example:
-
-```text
-Aditi visited Microsoft in Noida.
-```
-
-Possible entities:
-
-```text
-Aditi      → PERSON
-Microsoft  → ORG
-Noida      → GPE
-```
-
-## 🔹 What does the program do?
-
-The practical:
-
-* Loads a pre-trained spaCy model.
-* Processes an unstructured document.
-* Identifies named entities.
-* Extracts entity text.
-* Displays entity labels.
-
-## 🔹 Important Functions
-
-```text
-spacy.load()
-nlp()
-doc.ents
-ent.text
-ent.label_
-```
-
-## 💡 Key Learning
-
-Information Extraction converts unstructured text into useful structured information.
-
----
-
-# 2️⃣1️⃣ Information Retrieval System with Ranking using TF-IDF
-
-File:
-
-`21_Information_Retrieval_TFIDF.py`
-
-## 🔹 What is Information Retrieval?
-
-Information Retrieval (IR) is the process of finding relevant information or documents from a collection based on a user's query.
-
-Search engines are a common real-world example of information retrieval systems.
-
-## 🔹 TF-IDF
-
-TF-IDF represents documents and queries as numerical vectors.
-
-## 🔹 Cosine Similarity
-
-Cosine similarity measures the similarity between the query vector and document vectors.
-
-```text
-Higher Similarity → More Relevant
-Lower Similarity  → Less Relevant
-```
-
-## 🔹 What does the program do?
-
-The practical:
-
-* Stores a collection of documents.
-* Takes a user query.
-* Converts documents and query into TF-IDF vectors.
-* Calculates cosine similarity.
-* Ranks documents according to similarity.
-* Displays the most relevant documents first.
-
-## 🔹 Example
-
-Query:
-
-```text
-machine learning artificial intelligence
-```
-
-The system calculates similarity between the query and each document and produces a ranked list.
-
-## 🔹 Important Concepts
-
-* Information Retrieval
-* TF-IDF
-* Cosine Similarity
-* Query Vector
-* Document Vector
-* Document Ranking
-
-## 💡 Key Learning
-
-TF-IDF combined with cosine similarity can be used to build a basic search and document ranking system.
-
----
-
-# 🔄 Overall NLP Workflow
-
-The practicals collectively demonstrate an NLP workflow from basic preprocessing to advanced NLP applications:
-
-```text
-                     Input Text
-                         │
-                         ▼
-                   Tokenization
-                         │
-                         ▼
-          ┌──────────────┴──────────────┐
-          │                             │
-          ▼                             ▼
-   Stemming /                    Stop-word Removal
-   Lemmatization
-          │                             │
-          └──────────────┬──────────────┘
-                         ▼
-                    POS Tagging
-                         │
-                         ▼
-                  Parsing / Chunking
-                         │
-                         ▼
-                        NER
-                         │
-                         ▼
-                 Text Representation
-                         │
-             ┌───────────┼───────────┐
-             ▼           ▼           ▼
-            BoW        TF-IDF      N-Grams
-                         │
-                         ▼
-                  Word Embeddings
-                    (GloVe)
-                         │
-             ┌───────────┼───────────┐
-             ▼           ▼           ▼
-          Similarity   Classification  Sentiment
-             │           │           │
-             ▼           ▼           ▼
-            WMD       NB / SVM     TextBlob/VADER
-                         │
-                         ▼
-                  Topic Modeling
-                   ┌─────┴─────┐
-                   ▼           ▼
-                  LDA         LSA
-                   │           │
-                   └─────┬─────┘
-                         ▼
-              Information Extraction
-                         │
-                         ▼
-              Information Retrieval
-                         │
-                         ▼
-                  Ranked Results
-```
-
-These steps do not have to be applied in exactly this order for every NLP application. The pipeline depends on the problem being solved.
-
----
-
-# ⚙️ Installation and Setup
-
-## 1. Install Python
-
-Make sure Python 3.x is installed on your system.
-
-Check the installation using:
-
-```bash
+📘 All 32 Practicals
+No.	Practical / Program	Main concepts	CO
+01	Tokenization of Sentences and Words using NLTK and spaCy	Sentence and word tokenization	CO1
+02	Stemming and Lemmatization on Sample Text	Stemming, lemmas, root/base forms	CO1
+03	Stop-word Removal from a Document	Stop-word lists and preprocessing	CO1
+04	Part-of-Speech (POS) Tagging of a Given Sentence	Grammatical categories and POS tags	CO1
+05	Parsing and Chunking using Regex and spaCy	Phrase patterns, parsing, chunking	CO1
+06	Named Entity Recognition (NER) using spaCy	Entity detection and entity labels	CO1
+07	Coreference Resolution using neuralcoref or a Similar Tool	Linking mentions that refer to the same entity	CO2
+08	Bag-of-Words (BoW) Vectorization and Representation	Vocabulary, document-term matrix, word counts	CO2
+09	TF-IDF Implementation and Comparison with BoW	Term frequency, inverse document frequency, weighting	CO2
+10	N-Gram Model (Unigrams, Bigrams, Trigrams) from a Corpus	N-gram generation and local word context	CO2
+11	Cosine Similarity between Text Documents	Vector similarity and document comparison	CO2
+12	Word2Vec Embeddings using Gensim on a Custom Corpus	CBOW / Skip-gram and dense word vectors	CO2
+13	GloVe Embeddings Loading and Vector Representation	Pre-trained word vectors and semantic relationships	CO2
+14	Text Similarity using Word Mover's Distance (WMD)	Embedding-based semantic distance	CO2
+15	Text Classification using Naïve Bayes / SVM with TF-IDF	Supervised classification and evaluation	CO2
+16	Sentiment Analysis using TextBlob and VADER	Polarity, subjectivity, sentiment scores	CO2
+17	Topic Modeling using Latent Dirichlet Allocation (LDA)	Topic-word and document-topic distributions	CO2
+18	Topic Modeling using Latent Semantic Analysis (LSA)	TF-IDF, SVD, latent semantic structure	CO2
+19	Opinion Mining on Product / Service Reviews Dataset	Review polarity and sentiment distribution	CO2
+20	Information Extraction from Structured / Unstructured Documents	Extracting entities and useful fields	CO2
+21	Information Retrieval with TF-IDF Ranking	Query-document similarity and ranking	CO2
+22	Sequence Classification using RNN / LSTM	Sequential data, recurrent networks, classification	CO2
+23	Attention Mechanism	Attention weights and context-aware representations	CO2
+24	Fine-tuning BERT for Text Classification	Pre-trained language models and task-specific fine-tuning	CO3
+25	Sentence Embeddings using BERT and GPT-2	Contextual representations and embedding extraction	CO3
+26	Text Generation using GPT-2	Autoregressive language modeling and decoding	CO3
+27	Named Entity Recognition using Transformers / BERT	Transformer-based token classification	CO3
+28	Machine Translation using MarianMT or T5 (Hugging Face)	Sequence-to-sequence translation	CO3
+29	Text Summarization using BART or T5	Abstractive summarization	CO3
+30	Chatbot Development using a Pre-trained Transformer (DialoGPT / ChatGPT-style)	Conversational input and generated responses	CO3
+31	Automatic Document Classification and Separation using ML	Document labeling and grouping	CO3
+32	Hybrid Probabilistic + FSM-Based Sequence Modeling for Document Boundary Detection	Probabilistic decisions, finite-state machines, boundary detection	—
+
+
+CO mappings follow the practical list provided. No CO mapping was specified for Practical 32.
+🔎 What Each Practical Covers
+Practicals 01–06: Text Preprocessing and Linguistic Analysis
+These introduce foundational NLP operations: splitting text into sentences and tokens, reducing words to base forms, removing stop words, identifying grammatical roles, extracting phrase chunks, and detecting named entities.
+Practicals 07–14: Text Representation and Similarity
+These cover coreference resolution, BoW and TF-IDF representations, n-grams, cosine similarity, Word2Vec, GloVe, and WMD. BoW and TF-IDF create sparse numerical representations, while Word2Vec and GloVe produce dense word vectors. Cosine similarity compares vectors; WMD estimates semantic distance using word embeddings.
+Practicals 15–21: Core NLP Applications
+These include supervised text classification, sentiment analysis, topic modeling with LDA and LSA, opinion mining, information extraction, and information retrieval. The techniques serve different purposes: classification predicts labels, topic modeling discovers themes, extraction finds structured facts, and retrieval ranks documents for a query.
+Practicals 22–30: Neural Networks and Transformers
+These explore sequence classification with RNN/LSTM, attention, fine-tuning BERT, sentence representations, GPT-2 text generation, transformer-based NER, translation, summarization, and chatbot development.
+Practicals 31–32: Document Processing
+These focus on classifying and separating documents, then combining probabilistic modeling with a finite-state machine (FSM) to detect document boundaries.
+⚙️ Installation and Setup
+1. Install Python
+Install Python 3.x and verify it:
 python --version
-```
-
-## 2. Install Required Libraries
-
-Run:
-
-```bash
-pip install nltk spacy scikit-learn gensim textblob vaderSentiment
-```
-
-## 3. Download Required NLTK Resources
-
-Run:
-
-```python
+2. Install common dependencies
+pip install nltk spacy scikit-learn gensim textblob vaderSentiment transformers torch sentencepiece
+Depending on your environment, some practicals may need additional packages. For example, older neuralcoref releases may not support current spaCy versions; use a compatible coreference-resolution implementation.
+3. Download common NLP resources
+Run in Python:
 import nltk
 
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
-nltk.download('averaged_perceptron_tagger')
-```
-
-Depending on your NLTK version, additional resources may be required.
-
-## 4. Install spaCy English Model
-
-Run:
-
-```bash
+nltk.download("punkt")
+nltk.download("stopwords")
+nltk.download("wordnet")
+nltk.download("averaged_perceptron_tagger")
+NLTK resource names can differ across versions. If an error requests another resource, download the exact resource named in that error.
+4. Install the spaCy English model
 python -m spacy download en_core_web_sm
-```
-
----
-
-# ▶️ How to Run
-
-Open a terminal in the repository folder and run any practical using:
-
-```bash
+5. Model downloads
+Hugging Face models such as BERT, GPT-2, BART, T5, and MarianMT are usually downloaded the first time they are loaded. Internet access is needed for the initial download unless the model is already cached locally. Large models may require substantial RAM or GPU memory.
+▶️ How to Run a Practical
+Open a terminal in the repository directory and run the relevant Python file. For example:
 python 01_Tokenization.py
-```
-
-Similarly:
-
-```bash
-python 02_Stemming_Lemmatization.py
-python 03_Stopword_Removal.py
-python 04_POS_Tagging.py
-python 05_Parsing_Chunking.py
-python 06_NER.py
-python 07_Bag_of_Words.py
-python 08_TF_IDF.py
-python 09_N_Grams.py
-python 10_GloVe_Word_Embeddings.py
-python 14_WMD_Text_Similarity.py
+python 09_TF_IDF_vs_BoW.py
 python 15_Text_Classification_TFIDF.py
-python 16_Sentiment_Analysis.py
-python 17_LDA_Topic_Modeling.py
-python 18_LSA_Topic_Modeling.py
-python 19_Opinion_Mining.py
-python 20_Information_Extraction.py
-python 21_Information_Retrieval_TFIDF.py
-```
-
----
-
-# 📖 Concepts Covered
-
-| Practical | Concept                  | Library / Tool            |
-| --------- | ------------------------ | ------------------------- |
-| 01        | Tokenization             | NLTK, spaCy               |
-| 02        | Stemming & Lemmatization | NLTK                      |
-| 03        | Stop-word Removal        | NLTK                      |
-| 04        | POS Tagging              | NLTK                      |
-| 05        | Parsing & Chunking       | NLTK, RegEx, spaCy        |
-| 06        | Named Entity Recognition | spaCy                     |
-| 07        | Bag of Words             | Scikit-learn              |
-| 08        | TF-IDF                   | Scikit-learn              |
-| 09        | N-Grams                  | NLTK                      |
-| 10        | GloVe Word Embeddings    | GloVe                     |
-| 14        | Word Mover's Distance    | Gensim                    |
-| 15        | Text Classification      | TF-IDF, Naïve Bayes, SVM  |
-| 16        | Sentiment Analysis       | TextBlob, VADER           |
-| 17        | Topic Modeling           | LDA, Gensim               |
-| 18        | Topic Modeling           | LSA, SVD, Scikit-learn    |
-| 19        | Opinion Mining           | TextBlob                  |
-| 20        | Information Extraction   | spaCy, NER                |
-| 21        | Information Retrieval    | TF-IDF, Cosine Similarity |
-
----
-
-# 🎓 Learning Outcomes
-
-After completing these practicals, the learner will be able to:
-
-* Understand the basic concepts of NLP.
-* Tokenize text into sentences and words.
-* Apply stemming and lemmatization.
-* Remove stop words from text.
-* Perform Part-of-Speech tagging.
-* Understand parsing and chunking.
-* Extract noun phrases from text.
-* Identify named entities using spaCy.
-* Understand Bag of Words representation.
-* Convert text into numerical vectors.
-* Calculate TF-IDF representations.
-* Generate unigrams, bigrams, and trigrams.
-* Understand word embeddings using GloVe.
-* Measure semantic similarity using WMD.
-* Perform text classification using Naïve Bayes and SVM.
-* Perform sentiment analysis using TextBlob and VADER.
-* Discover hidden topics using LDA and LSA.
-* Perform opinion mining on reviews.
-* Extract useful information from unstructured documents.
-* Build a basic information retrieval and ranking system.
-* Apply NLP concepts to practical text-processing problems.
-
----
-
-# 🚀 Applications of NLP
-
-The concepts covered in these practicals are used in real-world applications such as:
-
-* Chatbots and virtual assistants
-* Search engines
-* Sentiment analysis
-* Text classification
-* Machine translation
-* Information extraction
-* Spam detection
-* Question-answering systems
-* Resume and document analysis
-* Text summarization
-* Autocomplete and text prediction
-* Document similarity
-* Topic discovery
-* Customer review analysis
-* Information retrieval
-* Text mining
-
----
-
-# 🔑 Key NLP Concepts
-
-This repository provides practical implementation of the following major NLP concepts:
-
-```text
-Tokenization
-     ↓
-Stemming
-     ↓
-Lemmatization
-     ↓
-Stop-word Removal
-     ↓
-POS Tagging
-     ↓
-Parsing
-     ↓
-Chunking
-     ↓
-Named Entity Recognition
-     ↓
-Bag of Words
-     ↓
-TF-IDF
-     ↓
-N-Grams
-     ↓
-GloVe Word Embeddings
-     ↓
-Word Mover's Distance
-     ↓
-Text Classification
-     ↓
-Sentiment Analysis
-     ↓
-Topic Modeling
-     ↓
-Opinion Mining
-     ↓
-Information Extraction
-     ↓
-Information Retrieval
-```
-
----
-
-# 📌 Notes
-
-* NLP preprocessing techniques should be selected according to the task.
-* Stop-word removal is not appropriate for every NLP application.
-* Stemming may produce words that are not valid dictionary words.
-* Lemmatization generally produces meaningful base forms but may require correct POS information for better results.
-* NER results depend on the trained spaCy model and the context of the input.
-* TF-IDF values depend on the collection of documents being analyzed.
-* Bag of Words does not capture word order.
-* N-Grams can capture limited word-order information.
-* GloVe represents words as dense numerical vectors.
-* WMD uses word embeddings to measure semantic distance between texts.
-* Naïve Bayes and SVM can be used for supervised text classification.
-* TextBlob and VADER provide different approaches to sentiment analysis.
-* LDA is a probabilistic topic modeling technique.
-* LSA commonly uses SVD to identify latent semantic structures.
-* Information Extraction can convert unstructured text into structured information.
-* Information Retrieval systems can rank documents based on their relevance to a query.
-
----
-
-# 👩‍💻 Author
-
-**Aditi Panwar**
-
-**B.Tech CSE (AI)**
-
----
-
-⭐ If you find this repository useful, consider giving it a **star**!
+python 24_BERT_Text_Classification.py
+python 29_Text_Summarization_BART_T5.py
+Run one practical at a time. The filename must match the actual file in your repository. If you use Google Colab, install the required packages in a notebook cell and run the practical cells in order.
+🧠 Concepts Covered at a Glance
+- Preprocessing: tokenization, stemming, lemmatization, stop-word removal, POS tagging, parsing, chunking
+- Linguistic analysis: NER and coreference resolution
+- Text representation: BoW, TF-IDF, n-grams, Word2Vec, GloVe, sentence embeddings
+- Similarity and retrieval: cosine similarity, WMD, TF-IDF ranking
+- Machine learning: Naïve Bayes, SVM, document classification, evaluation
+- Sentiment and topics: TextBlob, VADER, opinion mining, LDA, LSA
+- Deep learning: RNN, LSTM, attention
+- Transformers: BERT, GPT-2, BART, T5, MarianMT, transformer-based NER and chatbots
+- Document processing: information extraction, classification, separation, boundary detection
+🎓 Learning Outcomes
+After completing the practicals, learners should be able to:
+- Preprocess text and analyze its linguistic structure.
+- Convert text into sparse and dense numerical representations.
+- Compare documents using vector similarity and embedding-based distance.
+- Train or apply text classifiers and evaluate their outputs.
+- Analyze sentiment and discover topics in collections of text.
+- Extract entities and retrieve relevant documents.
+- Explain the basic roles of RNN/LSTM, attention, and transformer architectures.
+- Apply pre-trained transformer models to classification, generation, translation, summarization, and conversational tasks.
+- Build basic document-classification and boundary-detection workflows.
+🌍 Applications of NLP
+- Search engines and document retrieval
+- Chatbots and virtual assistants
+- Spam filtering and text classification
+- Customer-review and social-media sentiment analysis
+- Machine translation and text summarization
+- Resume and document analysis
+- Information extraction and question answering
+- Topic discovery and document organization
+- Text generation and autocomplete
+📌 Important Notes
+- Practical coverage vs. available files: this README lists all 32 practicals in the supplied practical list. Make sure each corresponding script or notebook is present in the repository before claiming that every program is implemented.
+- Model compatibility: library APIs and model availability can change. Check the installed library documentation if a model-loading command fails.
+- Coreference resolution: neuralcoref is an older package and may not work with modern spaCy versions; a compatible alternative may be required.
+- Preprocessing depends on the task: stop-word removal and stemming are not suitable for every NLP pipeline.
+- BoW and TF-IDF: these representations do not inherently preserve full word order or meaning.
+- Embeddings: Word2Vec and GloVe provide word vectors; BERT produces contextual representations. These methods are related but not interchangeable.
+- Similarity measures: higher cosine similarity generally indicates more similar vectors; lower WMD indicates less semantic distance.
+- Topic modeling: LDA and LSA use different approaches and their topics may require human interpretation.
+- Transformer resources: large models can take time and memory to download and run. Use a suitable runtime and avoid exposing API keys or credentials in notebooks.
+👩‍💻 Author
+Aditi Panwar
+B.Tech CSE (AI)
+⭐ If you find this repository useful, consider giving it a star!
